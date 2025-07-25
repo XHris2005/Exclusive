@@ -1,5 +1,5 @@
 import P1_img from './Havit_gamepad.png'
-import P2_img from './Ak_Keyboard.png'
+import P2_img from './AK_Keyboard.png'
 import P3_img from './Monitor-Cart-small.png'
 import P4_img from './comfort_chair.png'
 import I5_Star from './Five star.png'
