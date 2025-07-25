@@ -1,0 +1,201 @@
+.checkout_page{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.checkout_page .checkout_breadcrum{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px;
+    font-size: 18px;
+    color: rgb(194, 192, 192);
+    
+}
+.checkout_page .checkout_breadcrum span{
+    color: black;
+}
+.checkout_page .checkout{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: row;
+    padding: 10px 50px;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+.checkout_page .checkout .billing_details{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    box-sizing: border-box;
+}
+.checkout_page .checkout .billing_details h2{
+    font-weight: 400;
+    color: black;
+}
+.checkout_page .checkout .billing_details form{
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 30px;
+    width: 100%;
+    flex-direction: column;
+}
+.checkout_page .checkout .billing_details form label{
+    font-size: 16px;
+    color: rgb(190, 189, 189);
+    margin-bottom: 10px;
+}
+.checkout_page .checkout .billing_details form input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background-color:rgb(232, 231, 231) ;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+}
+.checkout_page .checkout .checkout_panel{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 500px;
+    margin-top: 10%;
+}
+.checkout_page .checkout .checkout_panel .checkout_items{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.checkout_page .checkout .checkout_panel .checkout_items .checkout_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.checkout_page .checkout .checkout_panel .checkout_items .checkout_item .product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.checkout_page .checkout .checkout_panel .checkout_items .checkout_item .product .product_image{
+    display: flex;
+    width: 70px;
+    height: 70px;
+}
+.checkout_page .checkout .checkout_panel .checkout_item_total{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+.checkout_page .checkout .checkout_panel .checkout_item_total .checkout_item_total_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+}
+.checkout_page .checkout .checkout_panel .checkout_item_total .checkout_item_total_item hr{
+    width: 90%;
+    margin: 0;
+}
+.checkout_page .checkout .checkout_panel .checkout_item_total .checkout_item_total_item p{
+    margin: 5px;
+}
+.checkout_page .checkout .checkout_panel .checkout_item_total .payment_options{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+.checkout_page .checkout .checkout_panel .checkout_item_total .payment_options .bank_payment{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+}
+.checkout_page .checkout .checkout_panel .checkout_item_total .payment_options .bank_payment .bank{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    gap: 55%;
+    box-sizing: border-box;
+}
+.checkout_page .checkout .checkout_panel .checkout_item_total .payment_options .bank_payment .bank img{
+    width: 40px;
+    transform: translateY(4px);
+}
+.checkout_page .checkout .checkout_panel .checkout_item_total .coupon_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+.checkout_page .checkout .checkout_panel .checkout_item_total .coupon_div input{
+    width: 250px;
+    padding: 15px;
+    outline: none;
+    border-radius: 5px;
+}
+.checkout_page .checkout .checkout_panel .checkout_item_total .coupon_div button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(210, 71, 71);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.checkout_page .checkout .checkout_panel .checkout_item_total .place_order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(210, 71, 71);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+@media(max-width:500px){
+    .checkout_page .checkout{
+        padding: 10px;
+    }
+    .checkout_page .checkout .checkout_panel{
+        width: 100%;
+    }
+    .checkout_page .checkout .checkout_panel .checkout_item_total .coupon_div{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .checkout_page .checkout .checkout_panel .checkout_item_total .payment_options .bank_payment .bank img{
+        display: none;
+    }
+}

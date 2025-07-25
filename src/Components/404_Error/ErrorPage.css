@@ -1,0 +1,52 @@
+.ErrorPage_nav {
+    margin-top: 100px;
+    width: 100%;
+    padding: 10px 0px 10px 75px;
+    box-sizing: border-box;
+}
+
+.ErrorPage_nav h3 {
+    font-size: 17px;
+    color: rgb(166, 163, 163);
+}
+
+.ErrorPage_nav h3 span {
+    color: black;
+}
+.Error_page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+.Error_page h1{
+    font-size: 80px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: black;
+    margin-bottom: 30px;
+}
+.Error_page p{
+    color: black;
+    font-weight: bold;
+    margin: 0;
+}
+.Error_page a{
+    margin-top: 30px;
+}
+.Error_page button{
+    display: flex;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(210, 71, 71);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

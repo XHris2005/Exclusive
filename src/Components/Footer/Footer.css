@@ -1,0 +1,120 @@
+h2, h3, p{
+    margin: 10px;
+}
+h2{
+    font-size: 26px;
+}
+h3{
+    font-weight: 400;
+    font-size: 23px;
+}
+.footer_container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 100px;
+    margin: 0;
+    margin-top: 150px;
+    flex-wrap: wrap;
+}
+.footer_container .exclusive{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+.footer_container .exclusive .mail{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    border: 1px solid white;
+    align-items: center;
+    margin-top: 10px;
+    padding-right: 5px;
+}
+.footer_container .exclusive .mail input{
+    height: 30px;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+}
+.footer_container .exclusive .mail img{
+    width: 25px;
+    height: 25px;
+}
+.footer_container .support{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+.footer_container .account{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.footer_container .quick_link {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.footer_container .download {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+}
+.footer_container .download .download_options{
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    gap: 2%;
+    box-sizing: border-box;
+}
+.footer_container .download .download_options .qr_code{
+    display: flex;
+    width: 50%;
+}
+.footer_container .download .download_options .qr_code img{
+    width: 90px;
+}
+.footer_container .download .download_options .p_a_store{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px solid white;
+}
+.footer_container .download .download_options .p_a_store .play_store{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+.footer_container .download .download_options .p_a_store .play_store img{
+    width: 120px;
+}
+.footer_container .download .download_options .p_a_store .app_store {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+.footer_container .download .download_options .p_a_store .app_store img {
+    width: 120px;
+}
+.footer_container .download .socials{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 10px;
+}
+.footer_container .download .socials img{
+    width: 30px;
+}
