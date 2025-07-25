@@ -3,7 +3,7 @@ import P6_img from './Gucci.png'
 import P7_img from './RGB.png'
 import P8_img from './bookshelf.png'
 import I5_Star from './Five star.png'
-import I4_Star from './Four star.png'
+import I4_Star from './Four Star.png'
 import I4h_Star from './Four Half Star.png'
 import I3_Star from './Three Star.png'
 
