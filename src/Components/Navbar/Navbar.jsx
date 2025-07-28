@@ -60,7 +60,7 @@ const Navbar = () => {
                         setAccount(account === 'active' ? null : 'active')
                         window.scrollTo(0,0)}
                     }  style={{backgroundColor: account === 'active' ? "rgb(210, 71, 71)" : 'white'}}><img src={user_img} style={{width: '33px', transform: 'translateX(-4px)'}}></img></div> : <></>}
-                    <Link to = '/Minimized' className='more'> <img src={more} style={{width: '22px'}}></img> </Link>
+                    <Link to = '/Minimized' className='more'> <img src={more} onClick={()=> window.scrollTo(0,0)} style={{width: '22px'}}></img> </Link>
                 </div>
             </div>
             { account === 'active' ? 

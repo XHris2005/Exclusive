@@ -12,14 +12,19 @@
 .content .content_menu{
     display: flex;
     list-style: none;
-    flex-direction: row;
-    gap: 10%;
+    flex-direction: column;
     width: 90%;
     align-items: center;
+    justify-content: center;
+}
+.content .content_menu li{
+    margin-bottom: 20px;
 }
 .content .content_menu a{
     margin-bottom: 10px;
+    font-size: 18px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 .content .content_menu .content_menu_list img{
     width: 15px;

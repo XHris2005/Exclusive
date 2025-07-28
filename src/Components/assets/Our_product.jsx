@@ -7,7 +7,7 @@ import P14_img from './cleats.png'
 import P15_img from './gamepad.png'
 import P16_img from './satin_jacket.png'
 import I5_Star from './Five star.png'
-import I4_Star from './Four star.png'
+import I4_Star from './Four Star.png'
 import I4h_Star from './Four Half Star.png'
 import I3_Star from './Three Star.png'
 

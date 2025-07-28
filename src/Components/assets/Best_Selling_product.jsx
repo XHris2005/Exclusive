@@ -15,6 +15,7 @@ let Best_selling_product = [
             new_price: 260,
             old_price: 360,
             star: I5_Star,
+            discount: -15,
             no_star:97
         },
         {
@@ -24,6 +25,7 @@ let Best_selling_product = [
             new_price: 960,
             old_price: 1160,
             star: I4h_Star,
+            discount: -25,
             no_star:74
         },
         {
@@ -33,6 +35,7 @@ let Best_selling_product = [
             new_price: 160,
             old_price: 170,
             star: I4h_Star,
+            discount: -5,
             no_star:87
         },
         {
@@ -42,6 +45,7 @@ let Best_selling_product = [
             new_price: 360,
             old_price: 460,
             star: I5_Star,
+            discount: -25,
             no_star:82
         },
 ]
