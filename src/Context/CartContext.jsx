@@ -5,9 +5,9 @@ import all_products from "../Components/assets/All_Product";
 import { AuthContext } from "./AuthContext";
 
 export const CartContext = createContext(null)
-const getDefaultCart = ()=>{
+const getDefaultCart = (cartStorageKey)=>{
     try {
-        const storedCart = localStorage.getItem("cartItems");
+        const storedCart = localStorage.getItem(cartStorageKey);
         if (storedCart) {
             return JSON.parse(storedCart);
         }
@@ -21,12 +21,16 @@ const getDefaultCart = ()=>{
     return cart;
 }
 const CartContextProvider = (props) => {
-    const [cartItems, setCartItems] = useState(getDefaultCart());
     const {user} = useContext(AuthContext)
+    const userId = user ? user.email : "cartItems"
+    const cartStorageKey = `cartItems_${userId}`
 
+    const [cartItems, setCartItems] = useState(getDefaultCart(cartStorageKey));
+    
     const addToCart = (itemId)=>{
         user ?
             setCartItems((prev)=>({...prev, [itemId] : prev[itemId] + 1}))
+            
         :
             console.log('go to login')
         
@@ -58,9 +62,19 @@ const CartContextProvider = (props) => {
         }
         return totalItem
     }
+
+    useEffect(() => {
+    const savedCart = localStorage.getItem(cartStorageKey);
+    if (savedCart) {
+        setCartItems(JSON.parse(savedCart));
+    } else {
+        setCartItems([]); // No saved cart for this user
+    }
+    }, [userId]);
+
     useEffect(()=>{
-        localStorage.setItem('cartItems', JSON.stringify(cartItems))
-    }, [cartItems])
+        localStorage.setItem(cartStorageKey, JSON.stringify(cartItems))
+    }, [cartItems,userId])
     const contextValue = {all_products, cartItems, addToCart, removeFromCart, getTotalAmount, getTotalCartItems}
     
     return (  

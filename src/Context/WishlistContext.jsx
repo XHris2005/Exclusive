@@ -4,9 +4,9 @@ import { AuthContext } from "./AuthContext";
 
 export const WishlistContext = createContext(null)
 
-const getDefaultWishlist = ()=>{
+const getDefaultWishlist = (wishlistStorageKey)=>{
     try{
-        const storedWishlist = localStorage.getItem('wishlistItems')
+        const storedWishlist = localStorage.getItem(wishlistStorageKey)
         if(storedWishlist){
             return JSON.parse(storedWishlist)
         }
@@ -20,9 +20,9 @@ const getDefaultWishlist = ()=>{
     return wishlist
 }
 
-const getDefaultForYou=()=>{
+const getDefaultForYou=(forYouItemsStorageKey)=>{
     try{
-        const storedForYou = localStorage.getItem('forYouItems')
+        const storedForYou = localStorage.getItem(forYouItemsStorageKey)
         if(storedForYou){
             return JSON.parse(storedForYou)
         }
@@ -36,10 +36,16 @@ const getDefaultForYou=()=>{
     return forYou
 }
 const WishlistContextProvider = (props) => {
-    const [wishlistItems, setWishlistItems] = useState(getDefaultWishlist())
     const {user} = useContext(AuthContext)
 
-    const [forYouItems, setForYouItems] = useState(getDefaultForYou())
+    const wishlistId = user ? user.email : 'wishlistItems'
+    const forYouId = user ? user.email : 'forYouItems'
+
+    const wishlistStorageKey = `wishlistItem_${wishlistId}`
+    const forYouItemsStorageKey = `forYouItems_${forYouId}`
+
+    const [wishlistItems, setWishlistItems] = useState(getDefaultWishlist(wishlistStorageKey))
+    const [forYouItems, setForYouItems] = useState(getDefaultForYou(forYouItemsStorageKey))
     
     const addToWishlist = (wishId)=>{
         user ? setWishlistItems((prev)=>({...prev, [wishId] : (0) + 1})) : console.log('go to login');
@@ -67,10 +73,28 @@ const WishlistContextProvider = (props) => {
         }
         return totalWishlist
     }
+
     useEffect(()=>{
-        localStorage.setItem('wishlistItems', JSON.stringify(wishlistItems))
-        localStorage.setItem('forYouItems', JSON.stringify(forYouItems))
-    }, [wishlistItems, forYouItems])
+        const savedWishCart = localStorage.getItem(wishlistStorageKey)
+        if(savedWishCart){
+            setWishlistItems(JSON.parse(savedWishCart))
+        }else{
+            setWishlistItems([])
+        }
+    }, [wishlistId])
+
+    useEffect(()=>{
+        const savedForYouCart = localStorage.getItem(forYouItemsStorageKey)
+        if(savedForYouCart){
+            setForYouItems(JSON.parse(savedForYouCart))
+        }else{
+            setForYouItems([])
+        }
+    }, [forYouId])
+    useEffect(()=>{
+        localStorage.setItem(wishlistStorageKey, JSON.stringify(wishlistItems))
+        localStorage.setItem(forYouItemsStorageKey, JSON.stringify(forYouItems))
+    }, [wishlistItems, forYouItems, wishlistId, forYouId])
     
     const wishlistValue = {all_products, wishlistItems,forYouItems, addToWishlist,addToForYou, removeFromWishlist,removeFromForYou, getTotalWishlists}
     return (  
