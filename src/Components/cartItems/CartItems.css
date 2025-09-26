@@ -179,6 +179,7 @@
     align-items: center;
     width: 100%;
     padding: 10px;
+    box-sizing: border-box;
 }
 .cart_items .cart_items_down .cart_item_total_display .cart_item_total hr{
     width: 90%;

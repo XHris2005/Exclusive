@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './Login.css'
 import signup_side_image from '../assets/signup_side_image.png'
 import { AuthContext } from "../../Context/AuthContext";
@@ -33,6 +34,10 @@ const Login = () => {
                         <div className="button_password">
                             <button>Login</button>
                             Forgotten password?
+                        </div>
+                        <div className="to_signup">
+                            Don't have an account? 
+                            <Link to='/Sign Up' onClick={()=> window.scrollTo(0,0)}>Signup</Link>
                         </div>
                     </div>
                 </form>

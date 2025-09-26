@@ -98,6 +98,12 @@
     border-radius: 5px;
     cursor: pointer;
 }
+.login_page .login_page_right .form_contents .to_signup{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
 @media(max-width: 1200px) {
     .login_page {
         gap: 5%;

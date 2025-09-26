@@ -26,6 +26,7 @@ h3{
     display: flex;
     flex-direction: column;
     width: 250px;
+    background-color: black;
 }
 .footer_container .exclusive .mail{
     width: 200px;
@@ -35,6 +36,7 @@ h3{
     align-items: center;
     margin-top: 10px;
     padding-right: 5px;
+    background-color: black;
 }
 .footer_container .exclusive .mail input{
     height: 30px;
@@ -52,21 +54,25 @@ h3{
     display: flex;
     flex-direction: column;
     width: 250px;
+    background-color: black;
 }
 .footer_container .account{
     display: flex;
     flex-direction: column;
     width: 200px;
+    background-color: black;
 }
 .footer_container .quick_link {
     display: flex;
     flex-direction: column;
     width: 200px;
+    background-color: black;
 }
 .footer_container .download {
     display: flex;
     flex-direction: column;
     width: 270px;
+    background-color: black;
 }
 .footer_container .download .download_options{
     display: flex;
@@ -74,10 +80,12 @@ h3{
     width: 250px;
     gap: 2%;
     box-sizing: border-box;
+    background-color: black;
 }
 .footer_container .download .download_options .qr_code{
     display: flex;
     width: 50%;
+    background-color: black;
 }
 .footer_container .download .download_options .qr_code img{
     width: 90px;
@@ -88,6 +96,7 @@ h3{
     width: 50%;
     box-sizing: border-box;
     border: 1px solid white;
+    background-color: black;
 }
 .footer_container .download .download_options .p_a_store .play_store{
     display: flex;
@@ -95,6 +104,7 @@ h3{
     width: 100%;
     box-sizing: border-box;
     align-items: center;
+    background-color: black;
 }
 .footer_container .download .download_options .p_a_store .play_store img{
     width: 120px;
@@ -105,6 +115,7 @@ h3{
     width: 100%;
     box-sizing: border-box;
     align-items: center;
+    background-color: black;
 }
 .footer_container .download .download_options .p_a_store .app_store img {
     width: 120px;
@@ -114,6 +125,7 @@ h3{
     width: 80%;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 10px;
+    background-color: black;
 }
 .footer_container .download .socials img{
     width: 30px;

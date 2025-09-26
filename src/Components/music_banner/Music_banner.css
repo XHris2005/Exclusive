@@ -24,6 +24,7 @@
     justify-content: center;
     flex-direction: column;
     box-sizing: border-box;
+    background-color: black;
 }
 .banner_container .banner .banner_left h3{
     color: rgb(43, 195, 43);
@@ -51,6 +52,7 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    background-color: black;
 }
 .banner_container .banner .banner_right img{
     display: flex;

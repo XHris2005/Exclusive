@@ -190,6 +190,7 @@ a{
     gap: 20px;
     align-items: center;
     cursor: pointer;
+    background-color: transparent;
 }
 .account_dropdown .contents img{
     width: 30px;

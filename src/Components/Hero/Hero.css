@@ -74,12 +74,14 @@
     justify-content: center;
     flex-direction: column;
     width: 50%;
+    background-color: black;
 }
 .hero-right .hero-right-main .main-left .main-left-iphone{
     display: flex;
     flex-direction: row;
     gap: 20px;
     align-items: center;
+    background-color: black;
 }
 .hero-right .hero-right-main .main-left .main-left-iphone img{
     width: 70px;

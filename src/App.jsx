@@ -20,7 +20,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div>
       <BrowserRouter>
         <Navbar></Navbar>
         <Routes>
@@ -42,7 +42,7 @@ function App() {
         <Footer></Footer>
       </BrowserRouter>
       
-    </>
+    </div>
   )
 }
 
