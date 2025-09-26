@@ -62,6 +62,7 @@
     justify-content: center;
     object-fit: cover;
     background-position: center;
+    background-color: black;
 }
 .hero-right .hero-right-main .main-right img{
     display: flex;

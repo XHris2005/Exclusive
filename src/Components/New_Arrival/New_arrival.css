@@ -65,7 +65,7 @@
     color: white;
     bottom: 20px;
     left: 20px;
-    background-color: black;
+    background-color: transparent;
 }
 .new_arrivals .new_arrival_items .item_right{
     display: flex;
@@ -88,7 +88,7 @@
     bottom: 20px;
     left: 40px;
     color: white;
-    background-color: black;
+    background-color: transparent;
 }
 .new_arrivals .new_arrival_items .item_right .item_right_bottom {
     display: flex;
@@ -116,7 +116,7 @@
     width: 70%;
     bottom: 20px;
     color: white;
-    background-color: rgb(31, 30, 30);
+    background-color: transparent;
 }
 .new_arrivals .new_arrival_items .item_right .item_right_bottom .item_bottom_right {
     display: flex;
@@ -136,7 +136,7 @@
     width: 70%;
     bottom: 20px;
     color: white;
-    background-color: rgb(31, 30, 30);
+    background-color: transparent;
 }
 @media (max-width: 1200px){
     .new_arrivals .new_arrival_items{
