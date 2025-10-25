@@ -5,8 +5,10 @@ import { useContext } from "react";
 import all_products from "../assets/All_Product";
 import icon_delete from '../assets/icon-delete.png'
 import { WishlistContext } from "../../Context/WishlistContext";
+import { CartContext } from "../../Context/CartContext";
 const WishlistItem = () => {
     const {wishlistItems,forYouItems, addToWishlist, removeFromWishlist,removeFromForYou, getTotalWishlists} = useContext(WishlistContext)
+    const {addToCart} = useContext(CartContext)
     return (  
         <>
         <div className="wishlist_products">
@@ -57,6 +59,9 @@ const WishlistItem = () => {
                 {all_products.map((e)=>{
                     if(forYouItems[e.id]>0){
                         return <div className="item" key={e.id} >
+                            <div className="item_icon">
+                                <img src={icon_delete} alt="" onClick={()=> removeFromForYou(e.id)}/>
+                            </div>
                             <div className="item_img">
                                 <Link to={`/product/${e.id}`}> <img onClick={()=> window.scrollTo(0,0)} src={e.image} alt="" /></Link>
                                 <button  onClick={()=> addToCart(e.id)}>Add to cart</button>

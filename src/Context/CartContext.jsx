@@ -5,7 +5,13 @@ import all_products from "../Components/assets/All_Product";
 import { AuthContext } from "./AuthContext";
 
 export const CartContext = createContext(null)
-const getDefaultCart = (cartStorageKey)=>{
+
+const CartContextProvider = (props) => {
+    const {user} = useContext(AuthContext)
+    const userId = user ? user.email : "cartItems"
+    const cartStorageKey = `cartItems_${userId}`
+    
+    const getDefaultCart = (cartStorageKey)=>{
     try {
         const storedCart = localStorage.getItem(cartStorageKey);
         if (storedCart) {
@@ -19,14 +25,10 @@ const getDefaultCart = (cartStorageKey)=>{
         cart[index] = 0
     }
     return cart;
-}
-const CartContextProvider = (props) => {
-    const {user} = useContext(AuthContext)
-    const userId = user ? user.email : "cartItems"
-    const cartStorageKey = `cartItems_${userId}`
+    }
 
     const [cartItems, setCartItems] = useState(getDefaultCart(cartStorageKey));
-    
+
     const addToCart = (itemId)=>{
         user ?
             setCartItems((prev)=>({...prev, [itemId] : prev[itemId] + 1}))

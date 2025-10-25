@@ -116,7 +116,7 @@
 }
 
 @media(max-width:1000px) {
-    .signup_page {
+    .login_page {
         flex-wrap: wrap;
         flex-direction: column-reverse;
     }
