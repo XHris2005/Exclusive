@@ -124,5 +124,14 @@
     .login_page .login_page_left {
         width: 90%;
         height: 90vw;
+        align-content: center;
+        justify-content: center;
+    }
+    .login_page .login_page_right{
+        width: 90%;
+        padding: 20px;
+    }
+    .login_page .login_page_right .form_contents{
+        width: 100%;
     }
 }

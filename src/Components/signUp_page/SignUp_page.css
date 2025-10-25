@@ -118,8 +118,14 @@
     .signup_page .signup_page_left{
         width: 90%;
         height: 90vw;
+        align-items: center;
+        justify-content: center;
     }
     .signup_page .signup_page_right{
         width: 90%;
+    }
+    .signup_page .signup_page_right h1{
+        font-size: 23px;
+        margin-bottom: 3px;
     }
 }
