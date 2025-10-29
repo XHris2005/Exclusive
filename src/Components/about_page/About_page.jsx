@@ -1,5 +1,6 @@
 import React from "react";
 import './About_page.css'
+import { Link } from "react-router-dom";
 import about_side_image from '../assets/about_side_image.png'
 import Icon_shop from '../assets/Icon-Shop.png'
 import Icon_sale from '../assets/Icon-Sale.png'
@@ -15,7 +16,7 @@ const About_page = () => {
         <>
         <div className="about_page">
             <div className="about_nav">
-                <h3>Home / <span>About</span></h3>
+                <h3><Link to={'/'}>Home</Link> / <span>About</span></h3>
             </div>
             <div className="our_story">
                 <div className="our_story_left">

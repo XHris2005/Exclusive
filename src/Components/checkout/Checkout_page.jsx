@@ -1,6 +1,7 @@
 import React from "react";
 import './Checkout_page.css'
 import { useState, useContext } from "react";
+import { Link } from "react-router-dom";
 import { CartContext } from "../../Context/CartContext";
 import { PaystackButton } from 'react-paystack'
 import all_products from "../assets/All_Product";
@@ -32,7 +33,7 @@ const Checkout_page = () => {
         <>
         <div className="checkout_page">
             <div className="checkout_breadcrum">
-                Home  /  Cart  /  <span>Checkout</span>
+                <Link to={'/'}>Home</Link> /  <Link to={'/Cart'}>Cart</Link>  /  <span>Checkout</span>
             </div>
             <div className="checkout">
                 <div className="billing_details">

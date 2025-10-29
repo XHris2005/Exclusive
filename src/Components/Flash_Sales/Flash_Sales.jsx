@@ -11,7 +11,7 @@ const Flash_Sales = () => {
                 <div className="rectangle"></div>
                 <h3>Today's</h3>
             </div>
-            <h1>FLASH SALES</h1>
+            <h1>Flash Sales</h1>
             <div className="flash_sale_item">
                 {flash_sales_product.map((item, i)=>{
                     return <Items key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price} star={item.star} discount={item.discount} no_star={item.no_star}></Items>

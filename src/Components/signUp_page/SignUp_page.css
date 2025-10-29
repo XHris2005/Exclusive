@@ -6,6 +6,9 @@
 }
 .signup_nav h3 {
     font-size: 17px;
+    
+}
+.signup_nav h3 a{
     color: rgb(166, 163, 163);
 }
 .signup_nav h3 span {
@@ -48,6 +51,7 @@
 }
 .signup_page .signup_page_right p{
     margin: 5px;
+    color: black;
 }
 .signup_page .signup_page_right .form_contents{
     display: flex;
@@ -65,6 +69,8 @@
     border: none;
     border-bottom: 1px solid black;
     outline: none;
+    background-color: white;
+    color: black;
 }
 .signup_page .signup_page_right .form_contents button{
     display: flex;
@@ -90,6 +96,7 @@
     border: 1px solid black;
     border-radius: 5px;
     gap: 15px;
+    color: black;
 }
 .signup_page .signup_page_right .form_contents .google_signUp img{
     width: 20px;
@@ -99,6 +106,7 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
+    color: black;
 }
 @media(max-width: 1200px){
     .signup_page{
@@ -127,5 +135,23 @@
     .signup_page .signup_page_right h1{
         font-size: 23px;
         margin-bottom: 3px;
+    }
+    .signup_page .signup_page_right .form_contents{
+        width: 100%;
+    }
+}
+@media (max-width: 520px){
+    .signup_nav{
+        padding: 10px;
+    }
+    .signup_page{
+        margin-top: 50px;
+    }
+    .signup_page .signup_page_right{
+        width: 100%;
+        padding: 10px;
+    }
+    .signup_page .signup_page_left{
+        width: 100%;
     }
 }

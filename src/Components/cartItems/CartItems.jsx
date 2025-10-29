@@ -15,7 +15,7 @@ const CartItems = () => {
     return (  
         <>
         <div className="cart_nav">
-            <h3>Home / <span>Cart</span></h3>
+            <h3><Link to={'/'}>Home</Link> / <span>Cart</span></h3>
         </div>
         <div className="cart_items">
             <table>
@@ -37,15 +37,16 @@ const CartItems = () => {
                                     <img src={icon_cancel} alt="" className="cancel" onClick={()=> removeFromCart(e.id)} />
                                 </div>
                                 <p>{e.name}</p>
-                                </div></td>
-                            <td style={{width: '20%', textAlign: 'left'}}><p>${e.new_price}</p></td>
+                                </div>
+                            </td>
+                            <td style={{width: '20%', textAlign: 'left', color: 'black'}}><p>${e.new_price}</p></td>
                             <td style={{width: '20%', textAlign: 'left'}}><div className="quantity">{cartItems[e.id]}
                                 <div className="drop">
                                     <img src={drop_up} alt=""  onClick={()=> addToCart(e.id)}/>
                                     <img src={drop_down} alt=""  onClick={()=> removeFromCart(e.id)}/>
                                 </div>
                             </div></td>
-                            <td style={{width: '20%', textAlign: 'left'}}><p>${e.new_price*cartItems[e.id]}</p></td>
+                            <td style={{width: '20%', textAlign: 'left', color: 'black'}}><p>${e.new_price*cartItems[e.id]}</p></td>
                         </tr>
                     } return null;
                 })}

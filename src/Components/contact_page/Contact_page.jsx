@@ -1,5 +1,6 @@
 import React from "react";
 import './Contact_page.css'
+import { Link } from "react-router-dom";
 import icon_phone from '../assets/icons-phone.png'
 import icon_mail from '../assets/icons-mail.png'
 const Contact_page = () => {
@@ -10,7 +11,7 @@ const Contact_page = () => {
         <>
         <div className="contact_page">
             <div className="contact_nav">
-                <h3><span>Home / </span>Contact</h3>
+                <h3><Link to={'/'}><span>Home / </span></Link>Contact</h3>
             </div>
             <div className="contact_main">
                 <div className="main_left">

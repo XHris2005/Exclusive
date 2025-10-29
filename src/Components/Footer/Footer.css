@@ -29,6 +29,8 @@ h3{
     background-color: black;
 }
 .footer_container .exclusive .mail{
+    display: flex;
+    flex-direction: row;
     width: 200px;
     height: 40px;
     display: flex;

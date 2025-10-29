@@ -12,7 +12,7 @@ const Best_Selling = () => {
                 <h3>This Month</h3>
             </div>
             <div className="best_selling_top">
-                <h1>BEST SELING PRODUCT</h1>
+                <h1>Best Selling Product</h1>
                 <Link to={'/Home/all_product'}><button className='view_product'>View All Products</button></Link>
             </div>
             

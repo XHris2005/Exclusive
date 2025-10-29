@@ -8,6 +8,9 @@
     font-size: 17px;
     color: rgb(166, 163, 163);
 }
+.login_nav h3 a{
+    color: rgb(166, 163, 163);
+}
 
 .login_nav h3 span {
     color: black;
@@ -50,7 +53,6 @@
     font-weight: 600;
     align-self: self-start;
     margin-bottom: 5px;
-    letter-spacing: 2px;
 }
 
 .login_page .login_page_right p {
@@ -74,6 +76,8 @@
     border: none;
     border-bottom: 1px solid black;
     outline: none;
+    background-color: white;
+    color: black;
 }
 .login_page .login_page_right .form_contents .button_password{
     display: flex;
@@ -103,6 +107,7 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
+    color: black;
 }
 @media(max-width: 1200px) {
     .login_page {
@@ -132,6 +137,24 @@
         padding: 20px;
     }
     .login_page .login_page_right .form_contents{
+        width: 100%;
+    }
+    .login_page .login_page_right .form_contents .button_password{
+        gap: 10%;
+    }
+}
+@media (max-width: 520px){
+    .login_nav {
+        padding: 10px;
+    }
+    .login_page{
+        margin-top: 100px;
+    }
+    .login_page .login_page_right {
+        width: 100%;
+        padding: 10px;
+    }
+    .login_page .login_page_left{
         width: 100%;
     }
 }

@@ -20,7 +20,7 @@ const SignUp_page = () => {
     return (  
         <>
         <div className="signup_nav">
-            <h3>Home / <span>SignUp</span></h3>
+            <h3><Link to={'/'}>Home</Link> / <span>SignUp</span></h3>
         </div>
         <div className="signup_page">
             <div className="signup_page_left">

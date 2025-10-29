@@ -1,5 +1,6 @@
 import React, { useState, createContext } from "react";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import './product_display.css'
 import fill_heart from '../assets/Fill Heart.png'
 import icon_delivery from '../assets/icon-delivery-b.png'
@@ -13,7 +14,7 @@ const Product_display = (props) => {
     return (  
         <>
         <div className="product_display_nav">
-            <h3>Home / <span>{product.Category}</span> / <span>{product.name}</span></h3>
+            <h3><Link to={'/'}>Home</Link> / <span>{product.Category}</span> / <span>{product.name}</span></h3>
         </div>
         <div className="product_display">
             <div className="product_image_div">

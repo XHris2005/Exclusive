@@ -146,3 +146,11 @@ hr{
     box-sizing: border-box;
     cursor: pointer;
 }
+@media (max-width: 520px){
+    .contact_page .contact_nav{
+        padding: 10px;
+    }
+    .contact_page .contact_main{
+        padding: 10px;
+    }
+}

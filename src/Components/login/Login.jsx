@@ -18,7 +18,7 @@ const Login = () => {
     return (  
         <>
         <div className="login_nav">
-            <h3>Home / <span>Login</span></h3>
+            <h3><Link to={'/'}>Home</Link> / <span>Login</span></h3>
         </div>
         <div className="login_page">
             <div className="login_page_left">
